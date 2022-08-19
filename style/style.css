@@ -1,0 +1,137 @@
+* {
+ margin: 0px;
+ padding: 0px;
+}
+
+body {
+ background-color: #f7f7f7;
+}
+
+h1 {
+ color: orange;
+ font-family: 'Ewert', cursive;
+}
+
+span {
+ color: gray;
+ font-family: 'Bree Serif', serif;
+ font-size: 14px;
+ font-weight: 100;
+}
+
+.noti {
+ font-family: 'Bree Serif', serif;
+ font-weight: 100;
+}
+
+.main-content {
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+/*** code for input ***/
+.button-62 {
+ background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+ border: 0;
+ border-radius: 12px;
+ color: #FFFFFF;
+ cursor: pointer;
+ display: inline-block;
+ font-family: 'Bree Serif', serif;
+ font-size: 16px;
+ font-weight: 500;
+ line-height: 2.5;
+ outline: transparent;
+ padding: 0 1rem;
+ text-align: center;
+ text-decoration: none;
+ transition: box-shadow .2s ease-in-out;
+ user-select: none;
+ -webkit-user-select: none;
+ touch-action: manipulation;
+ white-space: nowrap;
+}
+
+.button-62:not([disabled]):focus {
+ box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.button-62:not([disabled]):hover {
+ box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+/*** code for input ***/
+.input-62 {
+ border: 0;
+ border-radius: 12px;
+ font-family: 'Bree Serif', serif;
+ font-weight: 500;
+ line-height: 2.5;
+ outline: transparent;
+ text-align: center;
+ transition: box-shadow .2s ease-in-out;
+ user-select: none;
+ -webkit-user-select: none;
+ touch-action: manipulation;
+ white-space: nowrap;
+ width: 12%;
+ padding: 0px 0px 0px 25px;
+}
+
+.input-62:not([disabled]):focus {
+ box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.input-62:not([disabled]):hover {
+ box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+p {
+ color: gray;
+ font-size: 13px;
+ margin-top: 10px;
+}
+
+.all-countries-image {
+ height: 120px;
+ width: 100%;
+ transition: all 450ms;
+}
+
+.all-countries-image:hover {
+ transform: scaleY(1.2);
+ cursor: pointer;
+}
+
+.tab-img {
+ border-radius: 6%;
+ width: 93px;
+ height: 62px;
+}
+
+.rounded-circle {
+ height: 69vh;
+ border-radius: 50%;
+ animation-name: rotateEarth;
+ animation-iteration-count: infinite;
+ animation-duration: 320s;
+}
+
+@keyframes rotateEarth {
+ from {
+  transform: rotate(0deg);
+ }
+
+ to {
+  transform: rotate(360deg);
+ }
+}
+
+.change-img {
+ border-radius: 2px;
+ cursor: pointer;
+ height: 69vh;
+}
+
+input[list="all-countries"]::-webkit-calendar-picker-indicator {
+ opacity: 0;
+}

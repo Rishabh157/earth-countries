@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- google fonts start -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+  <!-- google font for only heading  -->
+  <link href="https://fonts.googleapis.com/css2?family=Ewert&display=swap" rel="stylesheet">
+  <!-- google fonts end -->
+
+  <!-- add a tab icon  -->
+  <link class="tabImg" rel="icon" href="./images/earth.ico">
+  <!-- Bootstrap-5 cdn  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>Countries</title>
+</head>
+<link rel="stylesheet" href="./style/style.css">
+
+<body>
+
+  <div class="container-fluid">
+
+    <div class="row text-center mb-2">
+      <h1>Earth's Countries</h1>
+      <span>Currently, We Have 250 countries</span>
+    </div>
+
+    <div id="center-div" class="row text-center mx-5 rounded-2">
+      <div class="my-2">
+
+        <button class="button-62 me-2" role="button">All Countries</button>
+        <button class="button-62 me-2" role="button">Population</button>
+        <input class="input-62" list="all-countries" type="text" placeholder="Country"></input>
+        <datalist id="all-countries">
+          <!-- <option>India</option> -->
+        </datalist>
+        <p class="noti"></p>
+
+        <!-- this is all countries data Start -->
+        <div class="row d-none all-countries-data"></div>
+        <!-- this is all countries data End -->
+
+        <!-- this is most populated countries code Start -->
+        <div class="d-none population-data mt-5">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Number</th>
+                <th scope="col">Name</th>
+                <th scope="col">Flag</th>
+                <th scope="col">Population</th>
+              </tr>
+            </thead>
+            <tbody class="populationData"></tbody>
+          </table>
+        </div>
+        <!-- this is most populated countries code End -->
+
+        <!-- this is the search country code Start  -->
+        <div class="mt-5 searchDiv">
+          <img class="rounded-circle" src="./images/frontImg.jpg" alt="Earth">
+        </div>
+
+      </div>
+      <!-- this is the search country code End  -->
+    </div>
+  </div>
+  </div>
+  <!-- code javascript & jQuery -->
+  <script src="./javascript/jquery-3.6.0.min.js"></script>
+  <script src="./javascript/index.mjs"></script>
+  <!-- code javascript & jQuery -->
+</body>
+
+</html>
