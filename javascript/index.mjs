@@ -2926,29 +2926,6 @@ $(document).ready(() => {                            // run when the document up
         $(".all-countries-data").addClass("d-none")
         $(".population-data").addClass("d-none")
         $(".searchDiv").removeClass("d-none")
-
-      //   $(".infoCard").append(
-      //     `
-      //     <div class="infoCard">
-      //   <div class="card" style="width: 22rem;">
-      //     <div class="card-body">
-      //       <h5 class="card-title">${ele.name}</h5>
-      //     </div>
-      //     <ul class="list-group list-group-flush">
-      //       <li class="list-group-item">Region : ${ele.region} </li>
-      //       <li class="list-group-item">Population : ${ele.population} </li>
-      //       <li class="list-group-item">Area : ${ele.area} </li>
-      //       <li class="list-group-item">Area : ${ele.languages.map(lan => lan)} </li>
-      //     </ul>
-      //   </div>
-      // </div>
-      // `
-      //   )
-
-
-
-
-
       }
     })
   })
