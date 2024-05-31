@@ -1,8 +1,8 @@
-# My First Web Project
+## My First Web Project
 
 This is my first web project where I learned the basics of HTML, CSS, JavaScript, and jQuery. This project showcases a simple web page with interactive elements.
 
-## Table of Contents
+### Table of Contents
 
 - [My First Web Project](#my-first-web-project)
   - [Table of Contents](#table-of-contents)
@@ -13,25 +13,25 @@ This is my first web project where I learned the basics of HTML, CSS, JavaScript
   - [Usage](#usage)
   - [Project Structure](#project-structure)
 
-## Introduction
+### Introduction
 
 This project is a simple web page designed to demonstrate my understanding of HTML for structure, CSS for styling, JavaScript for interactivity, and jQuery for simplifying JavaScript operations. The project includes basic elements like forms,inputs,buttons, and animations.
 
-## Features
+### Features
 
 - **HTML**: Structure of the web page.
 - **CSS**: Styling for a visually appealing design.
 - **JavaScript**: Adding interactivity to the web page.
 - **jQuery**: Simplifying DOM manipulation and event handling.
 
-## Technologies Used
+### Technologies Used
 
 - HTML5
 - CSS3
 - JavaScript ES6
 - jQuery 3.6.0
 
-## Setup
+### Setup
 
 To run this project locally, follow these steps:
 
@@ -50,7 +50,7 @@ To run this project locally, follow these steps:
     open index.html
     ```
 
-## Usage
+### Usage
 
 Once the project is set up and running, you can interact with the web page by:
 
@@ -58,7 +58,7 @@ Once the project is set up and running, you can interact with the web page by:
 - Clicking buttons
 - Viewing animations and other interactive elements
 
-## Project Structure
+### Project Structure
 
 ```
 |__ images/
