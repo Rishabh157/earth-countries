@@ -15,7 +15,7 @@ This is my first web project where I learned the basics of HTML, CSS, JavaScript
 
 ## Introduction
 
-This project is a simple web page designed to demonstrate my understanding of HTML for structure, CSS for styling, JavaScript for interactivity, and jQuery for simplifying JavaScript operations. The project includes basic elements like forms, buttons, and animations.
+This project is a simple web page designed to demonstrate my understanding of HTML for structure, CSS for styling, JavaScript for interactivity, and jQuery for simplifying JavaScript operations. The project includes basic elements like forms,inputs,buttons, and animations.
 
 ## Features
 
@@ -37,12 +37,12 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/your-repo-name.git
+    git clone https://github.com/Rishabh157/earth-countries.git
     ```
 
 2. **Navigate to the project directory:**
     ```bash
-    cd your-repo-name
+    cd earth-countries
     ```
 
 3. **Open `index.html` in your browser:**
@@ -59,3 +59,13 @@ Once the project is set up and running, you can interact with the web page by:
 - Viewing animations and other interactive elements
 
 ## Project Structure
+
+```
+|__ images/
+├── index.html
+├── style/
+│ └── styles.css
+├── js/
+│ └── index.mjs
+└── README.md
+```
