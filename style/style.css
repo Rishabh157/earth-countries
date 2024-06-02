@@ -117,6 +117,7 @@ p {
 .rounded-circle {
  height: 69vh;
  border-radius: 50%;
+ user-select: none;
  animation-name: rotateEarth;
  animation-iteration-count: infinite;
  animation-duration: 320s;
