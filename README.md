@@ -70,7 +70,7 @@ Once the project is set up and running, you can interact with the web page by:
 └── README.md
 ```
 
-```markdown
+```
 ## Live Demo
 
 [Live Demo](https://rishabh157.github.io/earth-countries/)
