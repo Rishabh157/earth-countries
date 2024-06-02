@@ -12,6 +12,7 @@ This is my first web project where I learned the basics of HTML, CSS, JavaScript
   - [Setup](#setup)
   - [Usage](#usage)
   - [Project Structure](#project-structure)
+- [Live Demo](#live-demo)
 
 ### Introduction
 
@@ -70,8 +71,5 @@ Once the project is set up and running, you can interact with the web page by:
 └── README.md
 ```
 
-```
 ## Live Demo
-
 [Live Demo](https://rishabh157.github.io/earth-countries/)
-```
