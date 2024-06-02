@@ -4,7 +4,7 @@
 }
 
 body {
- background-color: #f7f7f7;
+ background-color: #ffffff;
 }
 
 .infoCard {
@@ -67,7 +67,7 @@ span {
 
 /*** code for input ***/
 .input-62 {
- border: 0;
+ border: 1px solid gray;
  border-radius: 12px;
  font-family: 'Bree Serif', serif;
  font-weight: 500;

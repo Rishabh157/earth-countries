@@ -2864,94 +2864,14 @@ const countries_data = [
   }
 ]
 
-// function allCountriesDataShow(arr) {
-
-//   $(".noti").text("All 250 Countries in the Earth") // all classes add and remove when click All Countries
-//   $(".population-data").addClass("d-none")
-//   $(".all-countries-data").removeClass("d-none")
-//   $(".searchDiv").addClass("d-none")
-//   $("#center-div").addClass("main-content")
-
-//   arr.forEach(element => {                         // itrate the data and return all images with
-//     $(".all-countries-data").append(`
-//    <div class="col-2 mb-5">
-//    <img class="rounded all-countries-image" src=${element.flag} alt="india-image">
-//    </div>`
-//     )
-//   });
-
-// }
-
-
-// function mostPopulatedCountries(arr) {
-//   $(".noti").text("Top 10 Most Populated Countries In The World")  // all classes add and remove when click Population Country
-//   $(".population-data").removeClass("d-none")
-//   $(".all-countries-data").addClass("d-none")
-//   $(".searchDiv").addClass("d-none")
-//   $("#center-div").addClass("main-content")
-
-//   let pureSortArr = arr.sort((a, b) => {
-//     return b.population - a.population
-//   })
-
-//   pureSortArr.map((ele, ind) => {            // print the table most population countries in world
-//     ind < 10 ? $(".populationData")
-//       .append(`<tr>
-//   <th scope="row">${ind + 1}</th> 
-//   <td>${ele.name}</td>
-//   <td><img class="tab-img" src=${ele.flag}></td>
-//   <td>${ele.population}</td>
-//   </tr>`) : null
-//   })
-
-// }
-
-// $(document).ready(() => {
-//   $(".rounded-circle")[0].draggable = false          // notDraggble the Earth Image
-
-//   countries_data.map((ele) => {
-//     $("#all-countries").append(`<option>${ele.name}</option>`)
-//   })
-
-//   $("input").change((e) => {                         // when input field are filled
-//     countries_data.forEach((ele) => {
-//       if (ele.name == e.target.value) {
-//         let imgSrc = ele.flag
-//         $(".rounded-circle").addClass("change-img")
-//         $(".change-img").attr({ "src": imgSrc, "alt": ele.name })
-//         $(".rounded-circle").removeClass("rounded-circle")
-//         $(".all-countries-data").addClass("d-none")
-//         $(".population-data").addClass("d-none")
-//         $(".searchDiv").removeClass("d-none")
-//       }
-//     })
-//   })
-
-//   $("button").click((e) => {                      // user click the buttons
-
-//     let btnTxt = e.target.innerText
-
-//     /*** Population button click show data code ***/
-//     if (btnTxt === "Population") {
-//       clearContainer()
-//       mostPopulatedCountries(countries_data)      // call the function mostPopulatedCountries()
-//     } else if (btnTxt === "All Countries") {
-//       clearContainer()
-//       allCountriesDataShow(countries_data)        // call the function allCountriesDataShow()
-
-//     }
-//   })
-// })
-
-
 function allCountriesDataShow(arr) {
   $(".noti").text("All 250 Countries on Earth"); // all classes add and remove when click All Countries
   $(".population-data").addClass("d-none");
   $(".all-countries-data").removeClass("d-none");
-  $(".searchDiv").addClass("d-none");
+  $(".search-box").addClass("d-none");
   $("#center-div").addClass("main-content");
 
-  $(".all-countries-data").empty(); // Clear the container before adding new content
+  $(".all-countries-data").empty(); // clear the container before adding new content
 
   arr.forEach(element => { // iterate the data and return all images
     $(".all-countries-data").append(`
@@ -2963,19 +2883,19 @@ function allCountriesDataShow(arr) {
 }
 
 function mostPopulatedCountries(arr) {
-  $(".noti").text("Top 10 Most Populated Countries In The World"); // all classes add and remove when click Population Country
+  $(".noti").text("Top 10 Most Populated Countries In The World"); // all classes add and remove when click population country
   $(".population-data").removeClass("d-none");
   $(".all-countries-data").addClass("d-none");
-  $(".searchDiv").addClass("d-none");
+  $(".search-box").addClass("d-none");
   $("#center-div").addClass("main-content");
 
-  $(".populationData").empty(); // Clear the table before adding new rows
+  $(".populationData").empty(); // clear the table before adding new rows
 
   let pureSortArr = arr.sort((a, b) => {
     return b.population - a.population;
   });
 
-  pureSortArr.forEach((ele, ind) => { // print the table most population countries in the world
+  pureSortArr.forEach((ele, ind) => {
     if (ind < 10) {
       $(".populationData").append(`
         <tr>
@@ -2988,13 +2908,8 @@ function mostPopulatedCountries(arr) {
   });
 }
 
-// Function to clear the content of the container
-function clearContainer() {
-  $(".mainContainer").empty(); // Replace with the actual container ID where the list is being appended
-}
-
 $(document).ready(() => {
-  $(".rounded-circle")[0].draggable = false; // notDraggable the Earth Image
+  $(".rounded-circle")[0].draggable = false;
 
   countries_data.forEach((ele) => {
     $("#all-countries").append(`<option>${ele.name}</option>`);
@@ -3011,21 +2926,20 @@ $(document).ready(() => {
         $(".rounded-circle").removeClass("rounded-circle");
         $(".all-countries-data").addClass("d-none");
         $(".population-data").addClass("d-none");
-        $(".searchDiv").removeClass("d-none");
+        $(".search-box").removeClass("d-none");
       }
     });
   });
 
-  $("button").click((e) => { // user clicks the buttons
+  // user clicks the buttons
+  $("button").click((e) => {
     let btnTxt = e.target.innerText;
 
-    /*** Population button click show data code ***/
+    /*** population button click show data code ***/
     if (btnTxt === "Population") {
-      clearContainer();
-      mostPopulatedCountries(countries_data); // call the function mostPopulatedCountries()
+      mostPopulatedCountries(countries_data);
     } else if (btnTxt === "All Countries") {
-      clearContainer();
-      allCountriesDataShow(countries_data); // call the function allCountriesDataShow()
+      allCountriesDataShow(countries_data);
     }
   });
 });
