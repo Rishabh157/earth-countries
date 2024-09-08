@@ -16,7 +16,7 @@ This is my first web project where I learned the basics of HTML, CSS, JavaScript
 
 ### Introduction
 
-This project is a simple web page designed to demonstrate my understanding of HTML for structure, CSS for styling, JavaScript for interactivity, and jQuery for simplifying JavaScript operations. The project includes basic elements like forms,inputs,buttons, and animations.
+This project is a simple web page designed to demonstrate my understanding of HTML for structure, CSS for styling, JavaScript for interactivity, and jQuery for simplifying JavaScript operations. The project includes basic elements like forms,inputs,buttons, and animations. and giving the suggestion while searching the specific country.
 
 ### Features
 
